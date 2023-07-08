@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wandering Lens</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wandering Lens</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
 </head>
 <body>
-<header>
-<h1>Wandering Lens</h1>
-<h2>A Collection of everyday moments</h2>
-</header>
-<div id="image-grid">
-<!-- Images will be loaded here by JavaScript -->
-</div>
-<div id="image-overlay" hidden>
-<button id="close-btn">X</button>
-<img id="overlay-image">
-</div>
-<script src="script.js"></script>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <header>
+        <h1>Wandering Lens</h1>
+        <h2>A Collection of everyday moments</h2>
+    </header>
+    <div id="image-grid">
+        <!-- Images will be loaded here by JavaScript -->
+    </div>
+    <div id="image-overlay" hidden>
+        <button id="close-btn">X</button>
+        <img id="overlay-image">
+    </div>
+    
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCW-5TKSZPo7Q-TeT9IRHWhSb8aJI4v7DM",
+            authDomain: "wanderinglens-67683.firebaseapp.com",
+            projectId: "wanderinglens-67683",
+            storageBucket: "wanderinglens-67683.appspot.com",
+            messagingSenderId: "402800542305",
+            appId: "1:402800542305:web:34cdfe41eaa65b2e326020"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 
-<!-- Add Firestore and Storage products -->
-<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

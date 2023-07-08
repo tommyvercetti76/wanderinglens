@@ -1,15 +1,13 @@
-require('dotenv').config();
-
+// Initialize Firebase
 const firebaseConfig = {
-    apiKey: process.env.FIREBASE_API_KEY,
-    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.FIREBASE_PROJECT_ID,
-    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.FIREBASE_APP_ID,
+    apiKey: "AIzaSyCW-5TKSZPo7Q-TeT9IRHWhSb8aJI4v7DM",
+    authDomain: "wanderinglens-67683.firebaseapp.com",
+    projectId: "wanderinglens-67683",
+    storageBucket: "wanderinglens-67683.appspot.com",
+    messagingSenderId: "402800542305",
+    appId: "1:402800542305:web:34cdfe41eaa65b2e326020"
 };
 
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 // Get a reference to the Firestore database
