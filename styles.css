@@ -20,6 +20,14 @@ header {
 
 .image-item {
     margin: 10px;
+    width: 120px;
+    height: 120px;
+    overflow: hidden; /* Add this if you want to clip the images to fit the box */
+}
+
+.image-item img {
+    max-width: 100%;
+    min-height: 100%;
 }
 
 @media (max-width: 768px) {
