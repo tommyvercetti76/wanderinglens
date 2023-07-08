@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wandering Lens</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+
+    <!-- Add the Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-storage.js"></script>
+
 </head>
 <body>
     <header>
@@ -18,22 +26,6 @@
         <button id="close-btn">X</button>
         <img id="overlay-image">
     </div>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
-    <script>
-        // Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyCW-5TKSZPo7Q-TeT9IRHWhSb8aJI4v7DM",
-            authDomain: "wanderinglens-67683.firebaseapp.com",
-            projectId: "wanderinglens-67683",
-            storageBucket: "wanderinglens-67683.appspot.com",
-            messagingSenderId: "402800542305",
-            appId: "1:402800542305:web:34cdfe41eaa65b2e326020"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
