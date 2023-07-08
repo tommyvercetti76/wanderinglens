@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wandering Lens</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wandering Lens</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Wandering Lens</h1>
-        <h2>A Collection of everyday moments</h2>
-    </header>
-    <div id="image-grid">
-        <!-- Images will be loaded here by JavaScript -->
-    </div>
-    <div id="image-overlay" hidden>
-        <button id="close-btn">X</button>
-        <img id="overlay-image">
-    </div>
+<header>
+<h1>Wandering Lens</h1>
+<h2>A Collection of everyday moments</h2>
+</header>
+<div id="image-grid">
+<!-- Images will be loaded here by JavaScript -->
+</div>
+<div id="image-overlay" hidden>
+<button id="close-btn">X</button>
+<img id="overlay-image">
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+<!-- Add Firestore and Storage products -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
