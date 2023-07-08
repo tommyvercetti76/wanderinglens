@@ -1,4 +1,3 @@
-// Dummy image data, replace this with actual data later
 const images = [
     { src: './images/Cascades.PNG', alt: 'A Crow at Cascades' },
     { src: './images/Sunset_Clouds_Needle.PNG', alt: 'Space Needle at Sunset' },
@@ -20,7 +19,7 @@ images.forEach(image => {
     img.onclick = () => {
         overlayImage.src = image.src;
         overlayImage.alt = image.alt;
-        imageOverlay.removeAttribute('hidden');
+        imageOverlay.classList.remove('hidden');  // Show the overlay
     };
 
     imageItem.appendChild(img);
@@ -28,5 +27,5 @@ images.forEach(image => {
 });
 
 closeBtn.onclick = () => {
-    imageOverlay.setAttribute('hidden', '');
+    imageOverlay.classList.add('hidden');  // Hide the overlay
 };
