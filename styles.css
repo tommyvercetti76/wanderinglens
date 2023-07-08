@@ -22,6 +22,11 @@ header {
     margin: 10px;
     overflow: hidden; /* Clip the images to fit the box */
     border-radius: 20px; /* Curved border */
+    transition: transform 0.2s ease;
+}
+
+.image-item:active {
+    transform: scale(0.9);
 }
 
 .image-item img {

@@ -16,16 +16,17 @@ images.forEach(image => {
     const img = document.createElement('img');
     img.src = image.src;
     img.alt = image.alt;
-    img.onclick = () => {
-        overlayImage.src = image.src;
-        overlayImage.alt = image.alt;
-        imageOverlay.classList.remove('hidden');  // Show the overlay
-    };
 
     imageItem.appendChild(img);
     imageGrid.appendChild(imageItem);
+
+    imageItem.onclick = () => {
+        overlayImage.src = image.src;
+        overlayImage.alt = image.alt;
+        imageOverlay.classList.remove('hidden');
+    };
 });
 
 closeBtn.onclick = () => {
-    imageOverlay.classList.add('hidden');  // Hide the overlay
+    imageOverlay.classList.add('hidden');
 };
