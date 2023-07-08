@@ -1,8 +1,8 @@
 // Dummy image data, replace this with actual data later
 const images = [
-    { src: 'img1.jpg', alt: 'Image 1' },
-    { src: 'img2.jpg', alt: 'Image 2' },
-    // More images here...
+    { src: './images/Cascades.PNG', alt: 'A Crow at Cascades' },
+    { src: './images/Sunset_Clouds_Needle.PNG', alt: 'Space Needle at Sunset' },
+    { src: './images/Sunset_Clouds.PNG', alt: 'Raining Color' },
 ];
 
 const imageGrid = document.getElementById('image-grid');
