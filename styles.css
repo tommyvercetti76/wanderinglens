@@ -20,19 +20,26 @@ header {
 
 .image-item {
     margin: 10px;
-    width: 120px;
-    height: 120px;
-    overflow: hidden; /* Add this if you want to clip the images to fit the box */
+    overflow: hidden; /* Clip the images to fit the box */
+    border-radius: 20px; /* Curved border */
 }
 
 .image-item img {
-    max-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
-@media (max-width: 768px) {
-    #image-grid {
-        flex-direction: column;
-        align-items: center;
+@media (min-width: 768px) {
+    .image-item {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .image-item {
+        width: 120px;
+        height: 120px;
     }
 }
