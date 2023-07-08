@@ -1,15 +1,3 @@
-// Initialize Firebase
-const firebaseConfig = {
-    apiKey: "AIzaSyCW-5TKSZPo7Q-TeT9IRHWhSb8aJI4v7DM",
-    authDomain: "wanderinglens-67683.firebaseapp.com",
-    projectId: "wanderinglens-67683",
-    storageBucket: "wanderinglens-67683.appspot.com",
-    messagingSenderId: "402800542305",
-    appId: "1:402800542305:web:34cdfe41eaa65b2e326020"
-};
-
-firebase.initializeApp(firebaseConfig);
-
 // Get a reference to the Firestore database
 var db = firebase.firestore();
 
