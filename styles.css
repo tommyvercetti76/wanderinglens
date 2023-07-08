@@ -43,3 +43,33 @@ header {
         height: 120px;
     }
 }
+
+#image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay-image {
+    max-width: 90%;  /* Leave some margin on the sides */
+    max-height: 90%; /* Leave some margin on the top and bottom */
+}
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
